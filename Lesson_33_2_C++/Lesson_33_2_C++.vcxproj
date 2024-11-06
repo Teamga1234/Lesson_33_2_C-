@@ -128,6 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Lesson_33_2_C++.cpp" />
+    <ClCompile Include="MinutesTariff.cpp" />
+    <ClCompile Include="Provider.cpp" />
+    <ClCompile Include="SecondsTariff.cpp" />
+    <ClCompile Include="Tariff.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MinutesTariff.h" />
+    <ClInclude Include="Provider.h" />
+    <ClInclude Include="SecondsTariff.h" />
+    <ClInclude Include="Tariff.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
