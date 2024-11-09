@@ -7,6 +7,7 @@ MinutesTariff::MinutesTariff()
 
 MinutesTariff::MinutesTariff(std::string name, float price):Tariff(name)
 {
+    if (price <= 0)throw new PriceException("price is negative", price);
     this->price = price;
 }
 
@@ -22,6 +23,7 @@ float MinutesTariff::getPrice() const
 
 float MinutesTariff::calcCost(int seconds) const
 {
+    if (seconds <= 0) throw new SecondsException("seconds is negative", seconds);
     return (seconds /60)*price;
 }
 

@@ -8,6 +8,8 @@ Tariff::Tariff()
 
 Tariff::Tariff(std::string name)
 {
+    if (name.empty())throw new NameException("Empty string");
+    if(name.find("XXX") != -1)throw new NameException("Bad word", name);
     this->name = name;
 }
 
